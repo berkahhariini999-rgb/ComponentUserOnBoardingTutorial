@@ -9,14 +9,30 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        OneTimeOnBoarding(appStorageID:"Home_Tutorial") {
+            VStack {
+                VStack {
+                   Text("Hello")
+                }
+            
+            .padding()
+            .onBoarding(1){
+                
+            }
+            Button("Download") {
+                
+            }
+            .padding(15)
+            .onBoarding(2){
+                
+            }
         }
-        .padding()
+    } beginOnboarding: {
+        
+    } onBoardingFinished: {
+        
     }
+ }
 }
 
 #Preview {
